@@ -5,6 +5,7 @@ import tailwindcss from "@tailwindcss/vite";
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [react(), tailwindcss()],
+  base: "/react-job-browser/", // <-- GitHub repo name
   server: {
     port: 3000,
     proxy: {
@@ -16,4 +17,3 @@ export default defineConfig({
     },
   },
 });
-
